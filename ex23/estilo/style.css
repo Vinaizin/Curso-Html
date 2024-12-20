@@ -69,7 +69,7 @@
 
 
    section#flor{
-        background-image: url(imagens/joaninha.jpg);
+        background-image: url(/ex23/imagens/joaninha.jpg);
         background-repeat: no-repeat;
         background-color: black;
         background-size: cover;
@@ -78,7 +78,7 @@
     }
 
     section#folha{
-        background-image: url(imagens/folha.png);
+        background-image: url(/ex23/imagens/folha.png);
         background-repeat: no-repeat;
         background-color: black;
         background-size: cover;
