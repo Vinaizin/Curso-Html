@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas maiores</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table{
+        width: 400px;
+        border-collapse: collapse;
+    }
+    th,td{
+        border: 1px solid black;
+        text-align: center;
+        padding: 8px;
+        
+    }
+    thead,tfoot{
+     background-color: grey;   
+     color: white;
+     
+    }
+    .number{
+        text-align: right;
+    }
+
+</style>
+
+<body>
+    <!--
+    ANATOMIA DE TABELAS TABELAS GRANDES
+    THEAD
+        Tr,Td,Th
+    TBODY
+        Tr,Td,Th
+    TFOOT
+        Tr,Td,Th    
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Estados</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">2500000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">1900000</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="number">200000</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="number">135000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Habitantes Total:</td>
+                <td class="number">4.735.000</td>
+            </tr>
+
+        </tfoot>
+    </table>
+   
+
+
+</body>
+</html>
