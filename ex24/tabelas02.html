@@ -12,6 +12,7 @@
     table{
         width: 400px;
         border-collapse: collapse;
+        position: relative;
     }
     th,td{
         border: 1px solid black;
@@ -21,9 +22,17 @@
     }
     thead,tfoot{
      background-color: grey;   
-     color: white;
-     
+     color: white; 
     }
+
+    thead > tr> th{
+        position: sticky;
+        top: -1px;
+        background-color: black;
+
+
+    }
+
     .number{
         text-align: right;
     }
@@ -34,6 +43,12 @@
     }
      tbody > tr:nth-child(2n){
         background-color: rgba(128, 128, 128, 0.500);
+     }
+     /*
+      Para teste da rolagem até o fim da tabela
+      */
+     p{
+        max-width: 150px;
      }
 
 </style>
@@ -79,15 +94,129 @@
                 <td>Roraima</td>
                 <td class="number">135000</td>
             </tr>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">2500000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">1900000</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="number">200000</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="number">135000</td>
+            </tr>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">2500000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">1900000</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="number">200000</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="number">135000</td>
+            </tr>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">2500000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">1900000</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="number">200000</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="number">135000</td>
+            </tr>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">2500000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">1900000</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="number">200000</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="number">135000</td>
+            </tr>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">2500000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">1900000</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="number">200000</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="number">135000</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Habitantes Total:</td>
                 <td class="number">4.735.000</td>   
             </tr>
-
         </tfoot>
     </table>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio corporis blanditiis, consectetur quas neque itaque dolorum expedita ipsum accusantium corrupti fugiat id. Ducimus, quis officia voluptatibus ullam nihil error enim?Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, veritatis, hic labore consequuntur ducimus laudantium facere, ratione debitis quia voluptates tempore praesentium harum? Et sunt quas esse eius similique corporis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi obcaecati maxime quasi voluptate aperiam omnis, accusantium optio ut esse in minus, est at sequi vitae ex fugiat ullam quae cupiditate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima unde quam error explicabo est, natus ad aliquam, quo voluptate debitis impedit temporibus hic? Illum quod minima nesciunt nulla? Asperiores, odio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellendus reiciendis at. Praesentium, consequuntur sunt assumenda beatae, non, deserunt voluptatum harum soluta delectus molestias saepe vero doloremque corrupti dolor distinctio!
+    </p>
+    
    
 
 
