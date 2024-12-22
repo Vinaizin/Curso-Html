@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com destaque em colgroup</title>
+</head>
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    width: 500px;
+}
+caption{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 8px;
+}
+
+col.Cnome{
+    background-color: aqua;
+}
+
+col.Csexo{
+    background-color: rgb(199, 252, 252);
+}
+
+.Azul{
+    background-color: blue;
+}
+.laranja{
+    background-color: orange;
+}
+
+</style>
+<body>
+    <h1>Tabelas com destaque</h1>
+    <table>
+        <caption>Cadastro</caption>
+        <colgroup>
+            <col class="Cnome" span="2">Nome
+            <col class="Csexo" span="2">Sexo
+        </colgroup>
+    
+        <!-- Efeito zebrado em coluna
+        <colgroup>
+            <col class="Azul">Nome
+            <col class="Laranja">Sexo
+            <col class="Azul">Idade
+            <col class="Laranja">Profissão
+        </colgroup>
+        -->
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Carlos Terra</td>
+                <td>45</td>
+                <td>Masculino</td>
+                <td>Advogado</td>
+            </tr>
+
+            <tr>
+                <td>Felipe borrato</td>
+                <td>32</td>
+                <td>Masculino</td>
+                <td>Padeiro</td>
+            </tr>
+            <tr>
+                <td>João verstappen</td>
+                <td>25</td>
+                <td>Masculino</td>
+                <td>Motoboy</td>
+            </tr>
+            <tr>
+                <td>Maria clara Drugovich</td>
+                <td>19</td>
+                <td>Feminino</td>
+                <td>Professora</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+</html>
