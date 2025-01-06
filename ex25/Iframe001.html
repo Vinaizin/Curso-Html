@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando o uso do iframe</title>
     <style>
-
+iframe{
+    height: 500px;
+    width: 500px;
+    border: 1px solid red;
+}
     </style>
 </head>
 <body>
     <h1>Testando O uso de Iframe</h1>
     <p> Links podem ser criados tantos com <a href="https://github.com/Vinaizin" target="_blank">Github</a>
         <br>
-        Como por iframes, <iframe src="https://www.alura.com.br/" frameborder="0"></iframe>
+        Como por iframes, <iframe src="https://www.alura.com.br/" frameborder="0" scolling="auto">
+
+        </iframe>
+        <br>
+        <iframe src="https://www.google.com.br/" frameborder="0">
+            <a href="https://www.google.com.br/" target="_blank">google</a>
+        </iframe>
     </p>
+    <!-- Alguns navegadores não conseguem ler os links do <iframe> e antes do </frame> fechamento da tag, e irão mostrar os o conteudo escrito no meio do código, no caso após o iframe, preferivel disponibilizar o link novamente mas acorado em <a> </a>-->
     
 </body>
 </html>
