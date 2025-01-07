@@ -3,40 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas responsivas</title>
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightcoral;
+
+        }
+        div{
+            overflow-x: auto;
+            /*
+            Entender a responsividade da div melhor:
+            border: 1px dotted red;
+            max-width:672px;
+            */
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    
+        th, td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+    
+        tr:nth-child(even){
+            background-color: rgba(128, 128, 128, 0.537);
+        }
+    </style>
 </head>
-<style>
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: lightgrey;
-    }
-    div{
-        overflow-x: auto;
-        /*
-        Entender a responsividade da div melhor:
-        border: 1px dotted red;
-        max-width:672px;
-        */
-    }
-    table{
-        width: 500px;
-        border-collapse: collapse;
-    }
-    caption{
-        font-size: 1.5em;
-        font-weight: bold;
-    }
-
-    th, td{
-        border: 1px solid black;
-        text-align: center;
-        padding: 8px;
-    }
-
-    tr:nth-child(even){
-        background-color: rgba(128, 128, 128, 0.537);
-    }
-</style>
 <body>
     <h1>Tabela Responsiva</h1>
     <div>
