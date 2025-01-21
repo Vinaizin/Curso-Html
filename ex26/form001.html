@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            padding: 5px;
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="cadastro.php" method="post" autocomplete="off"><!--Get limitação a 3000caracteres, utilizar post para dados que precisam de mais segurança/envio de arquivos-->
+        <h1>Formulário</h1>
+        <p><label for="inome">Nome:</label> <!-- Sempre utilizar labels para forçar links entre o id e os inputs-->
+            <input type="text" name="Nome" id="inome"></p>
+        <p><label for="iSobrenome">Sobrenome:</label>
+            <input type="text" name="Sobrenome" id="iSobrenome"></p>
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
