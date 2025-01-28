@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+
+        <h1>Formulário</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <fieldset>
+                <p>
+                    <label for="iest">Digite seu estado: </label>
+                    <select name="estado" id="iest">
+                        <option value="" selected> --- Escolha --- </option>
+                    <optgroup label="Região sudeste">
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="Sp">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+
+                    <optgroup label="Região nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="Pe">Pernambuco</option>
+                        <option value="Rn">Rio Grande do Norte</option>
+                    </optgroup>
+                </select>
+                </p>
+
+                <p>
+                    <label for="iprof">Escolha uma profissão</label>
+                    <input type="text" name="prof" id="iprof" list="lstprof">
+                    <datalist id="lstprof">
+                        <option value="">Cozinheiro</option>
+                        <option value="">Pedreiro</option>
+                        <option value="">Desenvolvedor</option>
+                    </datalist>
+                </p>
+
+                <p>
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </p>
+                <p>
+                    <label for="imsg">Digite sua mensagem</label>
+                    <textarea name="msg" id="Imsg" cols="30" rows="10"></textarea>
+                </p>
+            </fieldset>
+        </form>
+    
+</body>
+</html>
