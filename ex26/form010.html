@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Exemplo</legend>
+
+            <p>
+                <label for="inasc">Em que ano vc nasceu?</label>
+                <input type="number" name="nasce" id="inasc" min="1950" max="2025"
+                oninput="calculaIdade()">
+
+            </p>
+
+            <p>
+                <label for="iidade">Sua idade é: </label>
+                <output id="iidade">0</output>
+            </p>
+
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+
+        </fieldset>
+    </form>
+
+    <script>
+        function calculaIdade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(inasc.value)
+        }
+    </script>
+
+
+
+</body>
+</html>
