@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/*  Typical device break
+telas pequenas: 600px
+celulares: 600 a 768px
+tablets 768 a 992px
+pc: 992px a 1200px
+telas grandes: mais que 1200px
+*/
+
+@media print{
+    
+}
+/*Para tablets*/
+@media (min-width:768px) and (max-width:992px){
+
+}
+
+/*Para pcs*/
+@media (min-width:992px) and (max-width:1200px){
+
+}
+
+/*Para Tvs*/
+@media (min-width:1200px){
+
+}
+
