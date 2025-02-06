@@ -18,11 +18,12 @@ body{
 }
 
 main{
-    background-color: rgba(255, 255, 255, 0.397);
+    background-color: rgba(255, 255, 255, 0.63);
     width: 90vw;
     border-radius: 8px;
     margin: auto;
     padding: 8px;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.11);
 }
 
 h1{
